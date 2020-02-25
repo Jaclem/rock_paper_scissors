@@ -1,0 +1,38 @@
+#Rock paper scissors game
+play = input('Play game? Y or N: ').lower()
+
+while play == 'y':
+    player_input1 = (input('P1 please type "Rock" "Paper" or "Scissors": ').lower())
+    player_input2 = (input('P2 please type "Rock" "Paper" or "Scissors": ').lower())
+    print("\n")
+        #Need to create an if statement to check if user input is correct.
+    if player_input1 == player_input2:
+         print("Draw!")
+
+    elif player_input1 == 'rock' and player_input2 == 'paper': #If player 1 picks rock and player 2 picks paper P2 wins
+        print("Congratulations Player 2 You win!")
+        print("P1's Answer: " + player_input1 + " P2's Answer: "+ player_input2)
+
+    elif player_input1 == 'rock' and player_input2 == 'scissors':
+        print("Congratulations Player 1 You Win!")
+        print("P1's Answer: " + player_input1 + " P2's Answer: "+ player_input2)
+
+    elif player_input1 == 'paper' and player_input2 == 'rock': #If p1 picks paper and P2 picks rock P1 wins
+        print("Congratulations Player 1 You win!")
+        print("P1's Answer: " + player_input1 + " P2's Answer: "+ player_input2)
+
+    elif player_input1 == 'paper' and player_input2 == 'scissors':
+        print("Congratulations Player 2 You Win!")
+        print("P1's Answer: " + player_input1 + " P2's Answer: "+ player_input2)
+
+    elif player_input1 == 'scissors' and player_input2 == 'rock':
+        print("Congratulations Player 2 you win!")
+        print("P1's Answer: " + player_input1 + " P2's Answer: "+ player_input2)
+
+    elif player_input1 == 'scissors' and player_input2 == 'paper':
+        print("Congratulations Player 1 You Win!")
+        print("P1's Answer: " + player_input1 + " P2's Answer: "+ player_input2)
+
+    play = input("Play again? Y or N: ").lower()
+    if play != 'y':
+        break
